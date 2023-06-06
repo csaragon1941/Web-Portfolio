@@ -2,99 +2,63 @@ import React from "react";
 import Link from "next/link";
 
 export default function Projects() {
-    return (
-        <div className="bg-[#f4f3ee] dark:bg-[#1F1F1F]">
-            <div className="max-w-6xl mx-auto">
-                <header className="flex flex-col md:flex-row justify-between items-center pt-40 mx-10 md:my-20 lg:my-0">
-                    {/* Add any header content if needed */}
-                </header>
+  const projects = [
+    {
+      id: 1,
+      title: "Economic Benefit Opportunity 'EBO'",
+      description: "Description of Project 1",
+      image: "/thumbnail/LogoDigitalWallet.png",
+      link: "./digitalwallet",
+    },
+    {
+      id: 2,
+      title: "Perseverance Rover Machine Learning Algorithm",
+      description: "Description of Project 2",
+      image: "/thumbnail/LogoOurHouse.png",
+      link: "./ourhouse",
+    },
+    {
+      id: 3,
+      title: "Discord Bot",
+      description: "Description of Project 3",
+      image: "/thumbnail/DcBot.png",
+      link: "./discordbot",
+    },
+    {
+      id: 4,
+      title: "Red Planet Hazard Hunter",
+      description: "Description of Project 4",
+      image: "/thumbnail/LogoMarsRover.png",
+      link: "./redplanet",
+    },
+  ];
 
-                {/* Project 1 */}
-                <div id="project1">
-                    <div className="bg-[#D1D5DB] dark:bg-[#252C37] rounded-lg shadow-lg p-6 w-full mx-auto mt-10">
-                        <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                            Economic Benefit Opportnuity "EBO"
-                        </h3>
-                        <p className="text-gray-600 dark:text-gray-300">
-                            Description of Project 1
-                        </p>
-                        <Link href="/projects/project1" passHref>
-                            <span className="mt-4 text-[#0070F3] dark:text-[#0070F3] font-medium hover:underline">
-                                Learn More
-                            </span>
-                        </Link>
-                    </div>
-                </div>
-
-                {/* Project 2 */}
-                <div id="project2">
-                    <div className="bg-[#FDE68A] dark:bg-[#4B5563] rounded-lg shadow-lg p-6 w-full mx-auto mt-10">
-                        <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                            Perserverance Rover Machine Learning Algorithm
-                        </h3>
-                        <p className="text-gray-600 dark:text-gray-300">
-                            Description of Project 2
-                        </p>
-                        <Link href="/projects/project2" passHref>
-                            <span className="mt-4 text-[#0070F3] dark:text-[#0070F3] font-medium hover:underline">
-                                Learn More
-                            </span>
-                        </Link>
-                    </div>
-                </div>
-
-                {/* Project 3 */}
-                <div id="project3">
-                    <div className="bg-[#FECACA] dark:bg-[#374151] rounded-lg shadow-lg p-6 w-full mx-auto mt-10">
-                        <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                            Dabloon Crypto Token
-                        </h3>
-                        <p className="text-gray-600 dark:text-gray-300">
-                            Description of Project 3
-                        </p>
-                        <Link href="google.com" passHref>
-                            <span className="mt-4 text-[#0070F3] dark:text-[#0070F3] font-medium hover:underline">
-                                Learn More
-                            </span>
-                        </Link>
-                    </div>
-                </div>
-
-
-                {/* Project 4 */}
-                <div id="project4">
-                    <div className="bg-[#D1D5DB] dark:bg-[#252C37] rounded-lg shadow-lg p-6 w-full mx-auto mt-10">
-                        <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                            Discord Music Bot
-                        </h3>
-                        <p className="text-gray-600 dark:text-gray-300">
-                            Description of Project 4
-                        </p>
-                        <Link href="https://github.com/jdurham38/discord-bot" passHref>
-                            <span className="mt-4 text-[#0070F3] dark:text-[#0070F3] font-medium hover:underline">
-                                Learn More
-                            </span>
-                        </Link>
-                    </div>
-                </div>
-
-                {/* Call to Action starts here */}
-                <div className="flex flex-col justify-center items-center py-20 text-center bg-[#f4f3ee] dark:bg-[#1F1F1F]">
-                    <h1 className="text-3xl font-bold text-gray-500 dark:text-white mb-4">
-                        Want to see more of my projects?
-                    </h1>
-                    <Link
-                        href="https://github.com/jdurham38?tab=repositories"
-                        passHref={true}
-                        legacyBehavior={true}
-                    >
-                        <span className="bg-[#517B57] text-white font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition duration-300">
-                            View All Projects
-                        </span>
-                    </Link>
-                </div>
-                {/* Call to Action ends here */}
+  return (
+    <div className="bg-[#f4f3ee] dark:bg-[#1F1F1F]">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 gap-4 mt-10">
+        {projects.map((project) => (
+          <div key={project.id}>
+            <div className="bg-[#D1D5DB] dark:bg-[#252C37] rounded-lg shadow-lg p-6 w-full h-full">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="h-48 w-full object-cover rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                {project.title}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                {project.description}
+              </p>
+              <Link href={project.link} passHref>
+                <span className="mt-4 text-[#0070F3] dark:text-[#0070F3] font-medium hover:underline">
+                  Learn More
+                </span>
+              </Link>
             </div>
-        </div>
-    );
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }

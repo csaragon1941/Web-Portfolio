@@ -6,6 +6,7 @@ import userData from "@constants/data";
 
 
 
+
 export default function Navbar() {
   const router = useRouter();
   console.log(router.asPath);
@@ -60,6 +61,33 @@ export default function Navbar() {
             )}
           </Link>
 
+          {/* Projects */}
+
+          <Link
+            href="/projects"
+            className={`text-base  ${router.asPath === "/about"
+              ? "text-[#3C312A] font-bold dark:text-[#FFFCF2]"
+              : "text-[#3C312A] dark:text-[#FFFCF2] font-normal "
+              }`}
+          >
+            Projects
+            {router.asPath === "/about" && (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-arrow-down inline-block h-3 w-3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                />
+              </svg>
+            )}
+          </Link>
+
           {/* Blog */}
           <Link
             href="/blog"
@@ -70,6 +98,10 @@ export default function Navbar() {
           >
             Blog
           </Link>
+
+
+
+
 
        {/* Experience Dropdown */}
 <div className="relative inline-block">
@@ -151,12 +183,12 @@ export default function Navbar() {
               onMouseLeave={() => setShowProjectsDropdown(false)}
               className="absolute z-10 mt-[-50px] space-y-2 p-2 bg-white dark:bg-[#0D1117] shadow-md rounded-md right-[-175px]"
             >
-              <Link href="/projects#project1" passHref>
+              <Link href="/digitalwallet">
                 <span className="block px-2 py-1 text-base font-normal text-[#3C312A] dark:text-[#FFFCF2] hover:text-[#0070F3] dark:hover:text-[#0070F3]">
                   EBO
                 </span>
               </Link>
-              <Link href="/projects#project2" passHref>
+              <Link href="/redplanet" >
                 <span className="block px-2 py-1 text-base font-normal text-[#3C312A] dark:text-[#FFFCF2] hover:text-[#0070F3] dark:hover:text-[#0070F3]">
                   Mars Rover
                 </span>
