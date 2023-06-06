@@ -1,7 +1,7 @@
 import React from "react";
 import userData from "@constants/data";
 
-export default function wallet() {
+export default function RedPlanet() {
   return (
     <section className="bg-[#F4F3EE] dark:bg-[#1F1F1F]">
       <div className="max-w-6xl mx-auto h-48 bg-[#F4F3EE] dark:bg-[#1F1F1F]">
