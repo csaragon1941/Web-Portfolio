@@ -8,7 +8,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
 
   const meta = {
-    title: "Josh Durham - Engineer, Business Analyst, Developer and Entreprenuer",
+    title: "Christina Aragon - Engineer, Business Analyst, Developer and Entreprenuer",
     description: `I'm a hard working and determined individual willing to get any job done. Get in touch with me to know more!`,
     image: "/C.Aragon-Avatar.png",
     type: "website",
