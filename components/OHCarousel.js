@@ -27,7 +27,7 @@ const CustomPrevArrow = (props) => {
   );
 };
 
-export default function DigitalCarousel() {
+export default function OHCarousel() {
   const [isDarkMode, setIsDarkMode] = useState(false); // Set initial dark mode state here
 
   const settings = {
@@ -62,35 +62,35 @@ export default function DigitalCarousel() {
       <Slider {...settings}>
         <div style={slideStyle}>
           <img
-            src="DigitalWalletScreens/Welcome.svg"
+            src="OurHouseScreens/OHmenu1.png"
             alt="Slide 1"
             style={imageStyle}
           />
         </div>
         <div style={slideStyle}>
           <img
-            src="DigitalWalletScreens/LogIn.svg"
+            src="OHScreens/OHpayment.png"
             alt="Slide 2"
             style={imageStyle}
           />
         </div>
         <div style={slideStyle}>
           <img
-            src="DigitalWalletScreens/SignUp.svg"
+            src="OHScreens/OHcalender.png"
             alt="Slide 3"
             style={imageStyle}
           />
         </div>
         <div style={slideStyle}>
           <img
-            src="DigitalWalletScreens/MainMenu.svg"
+            src="OHScreens/OHevents.png"
             alt="Slide 4"
             style={imageStyle}
           />
         </div>
         <div style={slideStyle}>
           <img
-            src="DigitalWalletScreens/PayMenu.svg"
+            src="OHScreens/OHlogin.png"
             alt="Slide 5"
             style={imageStyle}
           />

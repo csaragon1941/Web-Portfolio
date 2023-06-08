@@ -3,13 +3,13 @@ import React from "react";
 
 export default function Experience() {
   return (
-    <section className="bg-[#F4F3EE]} dark:bg-[#1F1F1F]">
-      <div className="max-w-6xl mx-auto h-48 bg-[#F4F3EE] dark:bg-[#1F1F1F]">
+    <section className="bg-[#F7F4F3]} dark:bg-[#1F1F1F]">
+      <div className="max-w-6xl mx-auto h-48 bg-[#F7F4F3] dark:bg-[#1F1F1F]">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left flex justify-center items-center">
           Experience
         </h1>
       </div>
-      <div className="bg-[#F4F3EE] dark:bg-[#1F1F1F] -mt-4">
+      <div className="bg-[#F7F4F3] dark:bg-[#1F1F1F] -mt-4">
         <div className="grid grid-cols-1 dark:bg-[#1F1F1F] max-w-xl mx-auto pt-20">
           {/* Experience card */}
           {userData.experience.map((exp, idx) => (

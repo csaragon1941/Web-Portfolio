@@ -4,13 +4,13 @@ import userData from "@constants/data";
 
 export default function AboutMe() {
   return (
-    <section className="bg-[#f4f3ee] dark:bg-[#1F1F1F]">
-      <div className="max-w-6xl mx-auto h-48 bg-[#f4f3ee] dark:bg-[#1F1F1F]">
+    <section className="bg-[#F7F4F3] dark:bg-[#1F1F1F]">
+      <div className="max-w-6xl mx-auto h-48 bg-[#F7F4F3] dark:bg-[#1F1F1F]">
         <h1 className="text-5xl md:text-8xl font-bold py-20 text-center md:text-left">
           About Me.
         </h1>
       </div>
-      <div className="bg-[#f4f3ee] -mt-10 dark:bg-[#1F1F1F]">
+      <div className="bg-[#F7F4F3] -mt-10 dark:bg-[#1F1F1F]">
         <div className="text-container max-w-6xl mx-auto pt-20">
           <p
             className="leading-loose text-2xl md:text-3xl font-semibold mx-4"
@@ -26,7 +26,7 @@ export default function AboutMe() {
           </p>
         </div>
       </div>
-      <div className="bg-[#f4f3ee] dark:bg-[#1F1F1F] px-3">
+      <div className="bg-[#F7F4F3] dark:bg-[#1F1F1F] px-3">
         <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
           {/* Social Links and Job Opportunities */}
           <div>
@@ -107,27 +107,29 @@ export default function AboutMe() {
 
       <div className="grid grid-cols-1 md:grid-cols-1 max-w-6xl mx-auto gap-y-20 gap-x-20 center">
         {/* Tech Stack */}
-        <h1 className="bg-[#B3C3E5] dark:bg-[#F3F7F3] text-4xl rounded-md px-4 py-2 inline-block font-bold text-[#1E355C] dark:text-[#FFFFFF]">
+        <h1 className="bg-[#B3C3E5] dark:bg-[#F3F7F3] text-4xl rounded-md px-4 py-2 inline-block font-bold text-[#1E355C] dark:text-[#6C5B4B]">
           Tech Stack
         </h1>
 
         <div className="mt-4">
           {/* Operating Systems */}
-          <h1 className="text-lg font-bold mb-4 ml-8">Operating Systems</h1>
-          <div className="flex flex-row items-center justify-center">
-            {/* Images */}
-            <img
-              src="tech stack/windows.svg"
-              className="h-20 w-20 mx-4 my-4"
-            />
-            <img
-              src="tech stack/osx.svg"
-              className="h-20 w-20 mx-4 my-4"
-            />
-            <img
-              src="tech stack/ios.svg"
-              className="h-20 w-20 mx-4 my-4"
-            />
+          <div className="bg-white dark:bg-gray-800 p-4 rounded-md">
+            <h1 className="text-lg font-bold mb-4">Operating Systems</h1>
+            <div className="flex flex-row items-center justify-center">
+              {/* Images */}
+              <img
+                src="tech stack/windows.svg"
+                className="h-20 w-20 mx-4 my-4"
+              />
+              <img
+                src="tech stack/osx.svg"
+                className="h-20 w-20 mx-4 my-4"
+              />
+              <img
+                src="tech stack/ios.svg"
+                className="h-20 w-20 mx-4 my-4"
+              />
+            </div>
           </div>
         </div>
 

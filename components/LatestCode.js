@@ -7,7 +7,7 @@ export default function LatestCode({ repositories }) {
   const [repos, setRepos] = useState(repositories);
 
   return (
-    <section className="bg-[#f4f3ee] -mt-40 dark:bg-[#1F1F1F] pb-40">
+    <section className="bg-[#F7F4F3] -mt-40 dark:bg-[#1F1F1F] pb-40">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center md:pt-40 mx-10">
           <h1 className="text-6xl lg:text-7xl max-w-lg font-bold text-brown-300 my-20 md:my-30 md:text-[#221E1B] dark:text-[#FFFFFF] text-center lg:text-left">
@@ -16,7 +16,7 @@ export default function LatestCode({ repositories }) {
 
           <a
             href={`https://github.com/${userData.githubUsername}`}
-            className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-[#483A33] hover:bg-[#625041] dark:bg-[#00B8AE] dark:hover:bg-[#00A39B] shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center md:text-[#F4F3EE] dark:text-[#F3F7F3]"
+            className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-[#483A33] hover:bg-[#625041] dark:bg-[#00B8AE] dark:hover:bg-[#00A39B] shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center md:text-[#F7F4F3] dark:text-[#F3F7F3]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

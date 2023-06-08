@@ -27,7 +27,7 @@ const CustomPrevArrow = (props) => {
   );
 };
 
-export default function DigitalCarousel() {
+export default function DiscordCarousel() {
   const [isDarkMode, setIsDarkMode] = useState(false); // Set initial dark mode state here
 
   const settings = {

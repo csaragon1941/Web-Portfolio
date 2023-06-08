@@ -4,7 +4,7 @@ import userData from "@constants/data";
 export default function Contact() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto h-48 bg-[#F4F3EE] dark:bg-[#0D1F22] antialiased">
+      <div className="max-w-6xl mx-auto h-48 bg-[#F7F4F3] dark:bg-[#0D1F22] antialiased">
         <h1 className=" text-5xl md:text-9xl font-bold py-10 text-center md:text-left text-[#1F1F1F]">
           Contact
         </h1>
@@ -141,7 +141,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <form className="form rounded-lg bg-[#F4F3EE] p-4 flex flex-col">
+          <form className="form rounded-lg bg-[#F7F4F3] p-4 flex flex-col">
             <label htmlFor="name" className="text-sm font-semibold text-[#1F1F1F] mx-4">
               {" "}
               Your Name

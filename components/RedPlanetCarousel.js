@@ -27,7 +27,7 @@ const CustomPrevArrow = (props) => {
   );
 };
 
-export default function DigitalCarousel() {
+export default function RedPlanetCarousel() {
   const [isDarkMode, setIsDarkMode] = useState(false); // Set initial dark mode state here
 
   const settings = {
@@ -62,39 +62,68 @@ export default function DigitalCarousel() {
       <Slider {...settings}>
         <div style={slideStyle}>
           <img
-            src="DigitalWalletScreens/Welcome.svg"
+            src="RPCarousel/cur_card.png"
             alt="Slide 1"
             style={imageStyle}
           />
         </div>
         <div style={slideStyle}>
           <img
-            src="DigitalWalletScreens/LogIn.svg"
+            src="RPCarousel/per_card.png"
             alt="Slide 2"
             style={imageStyle}
           />
         </div>
         <div style={slideStyle}>
           <img
-            src="DigitalWalletScreens/SignUp.svg"
+            src="RPCarousel/canny.jpg"
             alt="Slide 3"
             style={imageStyle}
           />
         </div>
         <div style={slideStyle}>
           <img
-            src="DigitalWalletScreens/MainMenu.svg"
+            src="RPCarousel/closing.jpg"
             alt="Slide 4"
             style={imageStyle}
           />
         </div>
         <div style={slideStyle}>
           <img
-            src="DigitalWalletScreens/PayMenu.svg"
+            src="RPCarousel/dialation.jpg"
             alt="Slide 5"
             style={imageStyle}
           />
         </div>
+        <div style={slideStyle}>
+          <img
+            src="RPCarousel/equalized.jpg"
+            alt="Slide 1"
+            style={imageStyle}
+          />
+        </div>
+        <div style={slideStyle}>
+          <img
+            src="RPCarousel/grayscale.jpg"
+            alt="Slide 2"
+            style={imageStyle}
+          />
+        </div>
+        <div style={slideStyle}>
+          <img
+            src="RPCarousel/lbp_features.jpg"
+            alt="Slide 3"
+            style={imageStyle}
+          />
+        </div>
+        <div style={slideStyle}>
+          <img
+            src="RPCarousel/selfie.jpg"
+            alt="Slide 4"
+            style={imageStyle}
+          />
+        </div>
+      
       </Slider>
     </div>
   );

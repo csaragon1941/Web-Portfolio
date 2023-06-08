@@ -3,9 +3,9 @@ import userData from "@constants/data";
 
 export default function Footer() {
   return (
-    <div className="bg-[#f4f3ee] dark:bg-[#1F1F1F]">
+    <div className="bg-[#F7F4F3] dark:bg-[#1F1F1F]">
       <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-        <div className="h-0.5 w-full bg-[#CCC0B8] dark:bg-[#f4f3ee]"></div>
+        <div className="h-0.5 w-full bg-[#CCC0B8] dark:bg-[#F7F4F3]"></div>
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
           <div>
             <p>&copy; Created by Christina Aragon. All Rights Reserved.</p>
@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="space-x-4 flex flex-row items-center">
             <a
               href={userData.socialLinks.instagram}
-              className="text-base font-normal text-[#483A32] dark:text-[#f4f3ee]"
+              className="text-base font-normal text-[#483A32] dark:text-[#F7F4F3]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ export default function Footer() {
            
             <a
               href={userData.socialLinks.linkedin}
-              className="text-base font-normal text-[#483A32] dark:text-[#f4f3ee]"
+              className="text-base font-normal text-[#483A32] dark:text-[#F7F4F3]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
