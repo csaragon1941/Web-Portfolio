@@ -90,7 +90,7 @@ export default function RedPlanetCarousel() {
         </div>
         <div style={slideStyle}>
           <img
-            src="RPCarousel/dialation.jpg"
+            src="RPCarousel/dilation.jpg"
             alt="Slide 5"
             style={imageStyle}
           />

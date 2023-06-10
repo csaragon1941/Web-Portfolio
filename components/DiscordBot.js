@@ -30,9 +30,9 @@ export default function discord() {
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
                 Tech Stack
               </h1>
-                            
-             {/* Picture 1 */}
-             <div className="flex items-center">
+
+              {/* Picture 1 */}
+              <div className="flex items-center">
                 <img
                   src="tech stack/python.svg"
                   className="h-10 w-10 mx-4 my-4"
@@ -66,23 +66,18 @@ export default function discord() {
             </div>
           </div>
           {/* Text area */}
-          <div className="my-20">
-            {/* Other content */}
-            <DiscordCarousel />
+          <div className="bg-[#F7F4F3] dark:bg-[#1F1F1F] -mt-4">
+            <div className="max-w-6xl mx-auto px-4 py-8">
+              <h2 className="text-3xl font-semibold mb-4">
+                What is it?
+              </h2>
+              <p className="text-lg text-gray-800 dark:text-[#FFFCF2] mb-4">
+                {projectData.discordbot.info}
+              </p>
+              <p className="text-lg text-gray-800 dark:text-[#FFFCF2] mb-4">
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div className="bg-[#F7F4F3] dark:bg-[#1F1F1F] -mt-4">
-        <div className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-3xl font-semibold mb-4">
-            What is it?
-            </h2>
-          <p className="text-lg text-gray-800 dark:text-[#FFFCF2] mb-4">
-            {projectData.discordbot.info}
-          </p>
-          <p className="text-lg text-gray-800 dark:text-[#FFFCF2] mb-4">
-          </p>
         </div>
       </div>
     </section>

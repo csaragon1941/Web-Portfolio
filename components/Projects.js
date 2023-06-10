@@ -21,7 +21,7 @@ export default function Projects() {
       id: 3,
       title: "Discord Bot",
       description: "Description of Project 3",
-      image: "/thumbnail/DcBot.png",
+      image: "/thumbnail/discordbot.png",
       link: "./discordbot",
     },
     {
@@ -35,6 +35,12 @@ export default function Projects() {
 
   return (
     <div className="bg-[#f4f3ee] dark:bg-[#1F1F1F]">
+      <h1 className="text-5xl md:text-8xl font-bold py-20 text-center md:text-center">
+        Projects
+      </h1>
+      <p className="text-lg text-gray-500 text-center md:text-center">
+        Click on a tile to learn more about the project!
+      </p>
       <div className="max-w-6xl mx-auto grid grid-cols-2 gap-20 mt-10">
         {projects.map((project) => (
           <div key={project.id}>
