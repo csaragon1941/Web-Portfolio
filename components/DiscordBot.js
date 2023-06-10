@@ -1,7 +1,7 @@
 import React from "react";
 import userData from "@constants/data";
 import projectData from "@constants/project";
-
+import DiscordCarousel from "./DiscordCarousel";
 
 export default function discord() {
   return (
