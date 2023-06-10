@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section className="bg-[#F7F4F3]} dark:bg-[#1F1F1F]">
       <div className="max-w-6xl mx-auto h-48 bg-[#F7F4F3] dark:bg-[#1F1F1F]">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left flex justify-center items-center">
+      <h1 className="text-5xl md:text-8xl font-bold py-20 text-center md:text-center">
           Experience
         </h1>
       </div>
